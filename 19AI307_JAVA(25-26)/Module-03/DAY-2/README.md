@@ -1,4 +1,4 @@
-# Ex.No:3(b) POLYMORPHISM
+# Ex.No:3(B) POLYMORPHISM
 
 ## QUESTION:
 Write a Java program demonstrating method overriding. Create a class Animal with a method sound(). Subclass it as Dog, Cat, Cow, each overriding the sound() method.
@@ -141,3 +141,4 @@ public class prog {
 
 ## RESULT:
 The program successfully demonstrates method overriding, showing different behaviors of the sound() method for different animal subclasses.
+
