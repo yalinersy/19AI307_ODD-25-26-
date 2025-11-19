@@ -29,28 +29,7 @@ Program to implement a Class and Objects using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-class Car {
-    String brand;
-    String model;
-    int year;
-}
 
-public class prog {
-    public static void main(String[] args) {
-        Car car1 = new Car();
-        car1.brand = "Toyota";
-        car1.model = "Innova";
-        car1.year = 2022;
-
-        Car car2 = new Car();
-        car2.brand = "Hyundai";
-        car2.model = "i20";
-        car2.year = 2021;
-
-        System.out.println("Car 1: " + car1.brand + " " + car1.model + " " + car1.year);
-        System.out.println("Car 2: " + car2.brand + " " + car2.model + " " + car2.year);
-    }
-}
 */
 ```
 
@@ -93,3 +72,4 @@ public class prog {
 
 ## RESULT:
 The program is successfully impletmented and output is verified. 
+
