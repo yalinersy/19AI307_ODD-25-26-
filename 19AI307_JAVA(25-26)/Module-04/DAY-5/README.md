@@ -30,94 +30,7 @@ Program to implement a Behaviour Pattern using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.*;
 
-class Article {
-    private String content;
-
-    public Article(String content) {
-        this.content = content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    // Save current state to memento
-    public ArticleMemento save() {
-        return new ArticleMemento(content);
-    }
-
-    // Restore state from memento
-    public void restore(ArticleMemento memento) {
-        this.content = memento.getContent();
-    }
-}
-
-class ArticleMemento {
-    private final String content;
-
-    public ArticleMemento(String content) {
-        this.content = content;
-    }
-
-    public String getContent() {
-        return content;
-    }
-}
-
-class ArticleHistory {
-    private List<ArticleMemento> versions = new ArrayList<>();
-
-    public void saveVersion(Article article) {
-        versions.add(article.save());
-    }
-
-    public ArticleMemento getVersion(int index) {
-        if (index >= 0 && index < versions.size()) {
-            return versions.get(index);
-        }
-        return null;
-    }
-
-    public List<ArticleMemento> getAllVersions() {
-        return versions;
-    }
-}
-
-public class ArticleManager {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        // Read number of versions
-        int n = Integer.parseInt(sc.nextLine());
-        ArticleHistory history = new ArticleHistory();
-        Article article = new Article("");
-
-        // Read and save each version
-        for (int i = 0; i < n; i++) {
-            String content = sc.nextLine();
-            article.setContent(content);
-            history.saveVersion(article);
-        }
-
-        // Read version index to restore (0-based)
-        int restoreIndex = Integer.parseInt(sc.nextLine());
-        ArticleMemento memento = history.getVersion(restoreIndex);
-        if (memento != null) {
-            article.restore(memento);
-            System.out.println(article.getContent());
-        } else {
-            System.out.println("Invalid version");
-        }
-
-        sc.close();
-    }
-}
 */
 ```
 
@@ -224,4 +137,5 @@ public class ArticleManager {
 
 ## RESULT:
 The program successfully demonstrates the Memento Pattern, allowing the user to save, view, and restore different versions of an article.
+
 
