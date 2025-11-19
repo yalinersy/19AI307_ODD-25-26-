@@ -26,54 +26,7 @@ Program to implement a Polymorphism using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-class Animal {
-    void sound() {
-        System.out.println("Unknown animal");
-    }
-}
-
-class Dog extends Animal {
-    @Override
-    void sound() {
-        System.out.println("Dog barks");
-    }
-}
-
-class Cat extends Animal {
-    @Override
-    void sound() {
-        System.out.println("Cat meows");
-    }
-}
-
-class Cow extends Animal {
-    @Override
-    void sound() {
-        System.out.println("Cow moos");
-    }
-}
-
-public class prog {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        while (sc.hasNextLine()) {
-            String input = sc.nextLine().trim();
-            if (input.isEmpty()) continue;
-
-            Animal a;
-            switch(input.toLowerCase()) {
-                case "dog": a = new Dog(); break;
-                case "cat": a = new Cat(); break;
-                case "cow": a = new Cow(); break;
-                default: a = new Animal();
-            }
-            a.sound();
-        }
-        sc.close();
-    }
-}
 */
 ```
 
@@ -141,4 +94,5 @@ public class prog {
 
 ## RESULT:
 The program successfully demonstrates method overriding, showing different behaviors of the sound() method for different animal subclasses.
+
 
