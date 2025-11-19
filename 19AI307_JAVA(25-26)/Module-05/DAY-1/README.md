@@ -27,25 +27,7 @@ Program to implement a InputStreamReader using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.io.*;
 
-public class FileWriteExample {
-    public static void main(String[] args) {
-        try {
-            BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-            String filename = br.readLine();
-            String content = br.readLine();
-
-            FileWriter fw = new FileWriter(filename);
-            fw.write(content);
-            fw.close();
-
-            System.out.println("File written successfully.");
-        } catch (IOException e) {
-            System.out.println("An error occurred.");
-        }
-    }
-}
 */
 ```
 
@@ -83,3 +65,4 @@ public class FileWriteExample {
 
 ## RESULT:
 The program successfully writes the entered text into output.txt using FileWriter.
+
