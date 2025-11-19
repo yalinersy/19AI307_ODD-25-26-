@@ -30,120 +30,7 @@ Program to implement a Inheritance and Aggregation using Java
 Developed by: Sri Yaline R 
 RegisterNumber: 212224040325
 
- import java.util.Scanner;
-import java.text.DecimalFormat;
-
-class Customer {
-    String customerId, name;
-    double purchaseWeight, goldRatePerGram;
-
-    Customer(String customerId, String name, double purchaseWeight, double goldRatePerGram) {
-        this.customerId = customerId;
-        this.name = name;
-        this.purchaseWeight = purchaseWeight;
-        this.goldRatePerGram = goldRatePerGram;
-    }
-
-    double getDiscountRate() {
-        return 0; // Default: no discount
-    }
-
-    double calculateFinalPrice() {
-        double discountAmount = goldRatePerGram * getDiscountRate() / 100;
-        double effectiveRate = goldRatePerGram - discountAmount;
-        return purchaseWeight * effectiveRate;
-    }
-
-    void display() {
-        DecimalFormat df = new DecimalFormat("0.00");
-        System.out.println("Customer ID: " + customerId);
-        System.out.println("Name: " + name);
-        System.out.println("Customer Type: General");
-        System.out.println("Purchase Weight: " + purchaseWeight + " grams");
-        System.out.println("Gold Rate per Gram: " + goldRatePerGram);
-        System.out.println("Discount: " + (int)getDiscountRate() + "%");
-        System.out.println("Final Price: " + df.format(calculateFinalPrice()));
-    }
-}
-
-class RegularCustomer extends Customer {
-    RegularCustomer(String customerId, String name, double purchaseWeight, double goldRatePerGram) {
-        super(customerId, name, purchaseWeight, goldRatePerGram);
-    }
-
-    @Override
-    double getDiscountRate() {
-        return 2.0;
-    }
-
-    @Override
-    void display() {
-        DecimalFormat df = new DecimalFormat("0.00");
-        System.out.println("Customer ID: " + customerId);
-        System.out.println("Name: " + name);
-        System.out.println("Customer Type: Regular");
-        System.out.println("Purchase Weight: " + purchaseWeight + " grams");
-        System.out.println("Gold Rate per Gram: " + goldRatePerGram);
-        System.out.println("Discount: " + (int)getDiscountRate() + "%");
-        System.out.println("Final Price: " + df.format(calculateFinalPrice()));
-    }
-}
-
-class PremiumCustomer extends Customer {
-    PremiumCustomer(String customerId, String name, double purchaseWeight, double goldRatePerGram) {
-        super(customerId, name, purchaseWeight, goldRatePerGram);
-    }
-
-    @Override
-    double getDiscountRate() {
-        return 5.0;
-    }
-
-    double getCashback() {
-        return calculateFinalPrice() * 0.01;
-    }
-
-    @Override
-    void display() {
-        DecimalFormat df = new DecimalFormat("0.00");
-        System.out.println("Customer ID: " + customerId);
-        System.out.println("Name: " + name);
-        System.out.println("Customer Type: Premium");
-        System.out.println("Purchase Weight: " + purchaseWeight + " grams");
-        System.out.println("Gold Rate per Gram: " + goldRatePerGram);
-        System.out.println("Discount: " + (int)getDiscountRate() + "%");
-        System.out.println("Final Price: " + df.format(calculateFinalPrice()));
-        System.out.println("Cashback: " + df.format(getCashback()));
-    }
-}
-
-public class prog {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        while (sc.hasNext()) {
-            String type = sc.next();
-            String customerId = sc.next();
-            String name = sc.next();
-            double weight = sc.nextDouble();
-            double goldRate = sc.nextDouble();
-
-            Customer c;
-            if (type.equalsIgnoreCase("Regular")) {
-                c = new RegularCustomer(customerId, name, weight, goldRate);
-            } else if (type.equalsIgnoreCase("Premium")) {
-                c = new PremiumCustomer(customerId, name, weight, goldRate);
-            } else {
-                c = new Customer(customerId, name, weight, goldRate);
-            }
-
-            c.display();
-            System.out.println();
-        }
-
-        sc.close();
-    }
-}
+ 
 */
 ```
 
@@ -277,3 +164,4 @@ public class prog {
 
 ## RESULT:
 The program successfully calculates and displays the final payable price for both Regular and Premium customers with applicable discounts and cashback.
+
