@@ -28,59 +28,7 @@ Program to implement a Access Specifiers using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-class Person {
-    private String name;
-    private int age;
-    private String country;
-
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    public String getCountry() {
-        return country;
-    }
-    public void setCountry(String country) {
-        this.country = country;
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        Person p = new Person();
-
-        String name = sc.nextLine();
-        int age = sc.nextInt();
-        sc.nextLine(); // consume newline
-        String country = sc.nextLine();
-
-        p.setName(name);
-        p.setAge(age);
-        p.setCountry(country);
-
-        // Print heading before details
-        System.out.println("Person 1");
-        System.out.println("Name: " + p.getName());
-        System.out.println("Age: " + p.getAge());
-        System.out.println("Country: " + p.getCountry());
-
-        sc.close();
-    }
-}
 */
 ```
 
@@ -153,4 +101,5 @@ public class Main {
 
 ## RESULT:
 The program successfully demonstrates encapsulation using getter and setter methods in Java.
+
 
