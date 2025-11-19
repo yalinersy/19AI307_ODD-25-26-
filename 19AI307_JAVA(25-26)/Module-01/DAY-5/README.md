@@ -37,23 +37,7 @@ Program to implement a Strings and Math Function using Java
 Developed by: Sri Yaline R 
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-public class ReverseString {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String input = sc.nextLine();
-
-        String reversed = "";
-        for (int i = input.length() - 1; i >= 0; i--) {
-            reversed += input.charAt(i);
-        }
-
-        System.out.println("Reversed string: " + reversed);
-        sc.close();
-    }
-}
 */
 ```
 
@@ -90,3 +74,4 @@ public class ReverseString {
 
 ## RESULT:
 The program successfully writes a Java program to reverse a given string.
+
