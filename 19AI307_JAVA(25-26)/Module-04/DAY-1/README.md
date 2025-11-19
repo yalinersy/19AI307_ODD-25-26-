@@ -29,24 +29,7 @@ Program to implement a Exception Handling using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-public class NullPointerArrayExample {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        String input = sc.next();
-        String str = input.equalsIgnoreCase("null") ? null : input;
-
-        try {
-            System.out.println(str.toUpperCase());
-        } catch (NullPointerException e) {
-            System.out.println("Null element");
-        }
-
-        sc.close();
-    }
-}
 */
 ```
 
@@ -83,3 +66,4 @@ public class NullPointerArrayExample {
 
 ## RESULT:
 The program successfully detects and handles NullPointerException by displaying "Null element" when the input is null.
+
