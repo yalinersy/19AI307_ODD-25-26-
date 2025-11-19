@@ -37,49 +37,7 @@ Program to implement a Interface using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-interface WeatherBot {
-    String predict(int temperature);
-}
-
-class SunBot implements WeatherBot {
-    public String predict(int temperature) {
-        if (temperature > 30) {
-            return "HOT";
-        } else {
-            return "MODERATE";
-        }
-    }
-}
-
-class RainBot implements WeatherBot {
-    public String predict(int temperature) {
-        if (temperature < 20) {
-            return "COLD";
-        } else {
-            return "WARM";
-        }
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int temperature = sc.nextInt();
-        int botType = sc.nextInt();
-        WeatherBot bot;
-
-        if (botType == 1) {
-            bot = new SunBot();
-        } else {
-            bot = new RainBot();
-        }
-
-        System.out.println(bot.predict(temperature));
-        sc.close();
-    }
-}
 */
 ```
 
@@ -142,3 +100,4 @@ public class Main {
 
 ## RESULT:
 The program predicts weather conditions using interface implementation and method overriding.
+
