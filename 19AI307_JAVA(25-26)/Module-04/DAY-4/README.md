@@ -27,65 +27,7 @@ Program to implement a Abstract Factory Pattern using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-// Notification interface
-interface Notification {
-    void notifyUser();
-}
-
-// Concrete notifications
-class EmailNotification implements Notification {
-    public void notifyUser() {
-        System.out.println("Sending Email Notification");
-    }
-}
-
-class SMSNotification implements Notification {
-    public void notifyUser() {
-        System.out.println("Sending SMS Notification");
-    }
-}
-
-class PushNotification implements Notification {
-    public void notifyUser() {
-        System.out.println("Sending Push Notification");
-    }
-}
-
-// Factory class
-class NotificationFactory {
-    public Notification createNotification(String type) {
-        switch(type.toLowerCase()) {
-            case "email": return new EmailNotification();
-            case "sms": return new SMSNotification();
-            case "push": return new PushNotification();
-            default: return null;
-        }
-    }
-}
-
-// Main class
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        NotificationFactory factory = new NotificationFactory();
-        
-        while(true) {
-            String input = sc.nextLine();
-            if(input.equalsIgnoreCase("exit")) break;
-
-            Notification notification = factory.createNotification(input);
-            if(notification != null) {
-                notification.notifyUser();
-            } else {
-                System.out.println("Invalid notification type: " + input);
-            }
-        }
-
-        sc.close();
-    }
-}
 */
 ```
 
@@ -164,3 +106,4 @@ public class Main {
 
 ## RESULT:
 The program successfully creates and sends the appropriate type of notification using the Factory Pattern.
+
