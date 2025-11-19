@@ -48,41 +48,6 @@ Program to implement a SOLID Principles in Java Program
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.*;
-
-class RadarControlTower {
-    private static RadarControlTower instance;
-    private int flightCount = 0;
-
-    private RadarControlTower() {}
-
-    public static RadarControlTower getInstance() {
-        if (instance == null) {
-            instance = new RadarControlTower();
-        }
-        return instance;
-    }
-
-    public int registerFlight(String flightName) {
-        flightCount++;
-        return flightCount;
-    }
-}
-
-public class prog {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.nextLine();  // consume newline
-
-        for (int i = 0; i < n; i++) {
-            String flight = sc.nextLine();
-            RadarControlTower tower = RadarControlTower.getInstance();
-            int total = tower.registerFlight(flight);
-            System.out.println(flight + " registered with Radar Control Tower. Total Flights: " + total);
-        }
-    }
-}
 
 */
 ```
@@ -140,3 +105,4 @@ public class prog {
 
 ## RESULT:
 The program ensures only one Radar Control Tower instance handles all flight communications and correctly displays the total number of registered flights.
+
