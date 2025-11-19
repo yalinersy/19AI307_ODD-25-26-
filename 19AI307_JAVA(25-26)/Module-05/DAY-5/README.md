@@ -36,44 +36,7 @@ Program to implement a Synchronization concept using Java
 Developed by: Sri Yaline R 
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-public class SwapSynchronized {
-    private int a;
-    private int b;
-
-    public SwapSynchronized(int a, int b) {
-        this.a = a;
-        this.b = b;
-    }
-
-    public void swap() {
-        Object lock = new Object(); // lock object for synchronization
-        synchronized (lock) {
-            int temp = a;
-            a = b;
-            b = temp;
-        }
-    }
-
-    public void printValues() {
-        System.out.println("a = " + a);
-        System.out.println("b = " + b);
-    }
-
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int a = Integer.parseInt(sc.nextLine());
-        int b = Integer.parseInt(sc.nextLine());
-
-        SwapSynchronized swapper = new SwapSynchronized(a, b);
-        swapper.swap();
-        swapper.printValues();
-
-        sc.close();
-    }
-}
 */
 ```
 
@@ -131,3 +94,4 @@ public class SwapSynchronized {
 ## RESULT:
 
 The program successfully swaps the two integers inside a synchronized block and displays the swapped values safely.
+
