@@ -29,15 +29,6 @@ To write a java program to get name from the user and print it.
 Program to implement variables and Operators using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
-
-import java.util.*;
-public class Main{
-    public static void main(String[] args){
-        Scanner sc=new Scanner(System.in);
-        String s=sc.next();
-        System.out.println("Hello, "+s);
-    }
-}
 */
 ```
 
@@ -65,3 +56,4 @@ public class Main{
 
 ## RESULT:
 The program successfully writes a java program to get name from the user and print it.
+
