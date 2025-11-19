@@ -26,31 +26,6 @@ Program to implement a Variable scope and Constructor using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
- import java.util.Scanner;
-
-class Circle {
-    double area;
-
-    // Constructor to calculate area
-    Circle(double radius) {
-        area = 3.14159 * radius * radius;
-        System.out.printf("Area of the circle with radius %.2f is %.2f%n", radius, area);
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        if (sc.hasNextDouble()) {           // check if input exists
-            double radius = sc.nextDouble();
-            Circle c = new Circle(radius);  // constructor calculates & prints area
-        }
-
-        // Do not close Scanner in online judges (prevents hidden test failures)
-    }
-}
-
 */
 ```
 
@@ -95,3 +70,4 @@ public class Main {
 
 ## RESULT:
 The program successfully calculates and displays the area of a circle using a constructor.
+
