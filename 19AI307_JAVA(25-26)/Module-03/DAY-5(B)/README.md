@@ -27,30 +27,7 @@ Program to implement a Wrapper Class using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        String str1 = scanner.next();
-
-        String str2 = scanner.next();
-
-        scanner.close();
-
-        try {
-            int num1 = Integer.parseInt(str1);
-            int num2 = Integer.parseInt(str2);
-
-
-            int sum = num1 + num2;
-            System.out.println("Sum = " + sum);
-        } catch (NumberFormatException e) {
-            System.out.println("Invalid input. Please enter a valid number.");
-        }
-    }
-}
 */
 ```
 
@@ -93,3 +70,4 @@ public class Main {
 
 ## RESULT:
 The program successfully converts strings to integers and displays their sum.
+
