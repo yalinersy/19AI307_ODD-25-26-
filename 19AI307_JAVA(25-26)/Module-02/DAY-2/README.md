@@ -30,20 +30,7 @@ Program to implement a Methods using Java
 Developed by: Sri Yaline R
 RegisterNumber:  212224040325
 
-import java.util.Scanner;
-class prog {
-    public static void modifyValue(int num) {
-        num = num + 10;
-        System.out.println("Inside method: " + num);
-    }
 
-    public static void main(String[] args) {
- Scanner sc = new Scanner(System.in);
-        int x = sc.nextInt();
-        modifyValue(x);
-        System.out.println("Outside method: " + x);
-    }
-}
 */
 ```
 
@@ -77,3 +64,4 @@ class prog {
 
 ## RESULT:
 The program successfully shows that primitive data types in Java are passed by value, so changes inside the method don’t affect the original variable.
+
