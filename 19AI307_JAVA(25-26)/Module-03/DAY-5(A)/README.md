@@ -26,38 +26,7 @@ Program to implement a InnerClass using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-class OuterClass {
-    String name;
-
-    OuterClass(String name) {
-        this.name = name;
-    }
-
-    void display() {
-        InnerClass inner = new InnerClass();
-        inner.showMessage();
-    }
-
-    class InnerClass {
-        void showMessage() {
-            System.out.println("Hello, " + name + "! This message is from the Inner Class.");
-        }
-    }
-}
-
-public class Main {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("");
-        String input = scanner.next();
-        scanner.close();
-
-        OuterClass outer = new OuterClass(input);
-        outer.display();
-    }
-}
 */
 ```
 
@@ -109,3 +78,4 @@ public class Main {
 
 ## RESULT:
 The program successfully accesses and prints data from the inner class using the outer class.
+
