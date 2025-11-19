@@ -28,25 +28,7 @@ Program to implement a Array concept using Java
 Developed by: Sri Yaline R
 RegisterNumber: 212224040325
 
-import java.util.Scanner;
 
-public class AverageArray {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int n = sc.nextInt();
-        int[] arr = new int[n];
-        int sum = 0;
-
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
-            sum += arr[i];
-        }
-
-        double avg = (double) sum / n;
-        System.out.printf("The average of elements is %.2f\n", avg);
-    }
-}
 
 */
 ```
@@ -87,4 +69,5 @@ public class AverageArray {
 
 ## RESULT:
 The program successufully writes a Java Program to Find the Average of Array Elements.
+
 
